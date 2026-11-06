@@ -1,0 +1,271 @@
+:root {
+    --color: rgb(202, 202, 202);
+    --blue-color: rgba(0, 0, 255, 0.678);
+    --grey-color: rgb(150, 148, 148);
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* header start */
+header {
+    width: 100vw;
+    min-height: 70px;
+    background-color: var(--grey-color);
+    /* position: fixed; */
+    /* top: 0;
+right: 0;
+left: 0; */
+}
+
+
+header .icon {
+    position: absolute;
+    top: 15px;
+    font-size: 1.5em;
+    display: none;
+
+}
+
+.header {
+    max-width: 1600px;
+    min-height: 70px;
+    background-color: var(--grey-color);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+
+}
+
+.header .logo {
+    display: flex;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    align-items: center;
+    /* background-color: chocolate; */
+
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    /* margin-bottom: 15px; */
+}
+
+.header .logo p {
+    margin-left: 1em;
+    /* text-align: center; */
+}
+
+.header nav {
+    display: flex;
+    flex-grow: 2;
+    /* margin: auto; */
+    justify-content: center;
+
+
+}
+
+.header nav select {
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    font-size: 1em;
+
+}
+
+.header nav select option {
+    background-color: rgba(128, 128, 128, 0.774);
+    border: 2px solid var(--color);
+}
+
+a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--color);
+}
+
+.btns {
+    display: flex;
+}
+
+button {
+    border: none;
+    padding: 5px;
+    background-color: var(--blue-color);
+    border-radius: 8px;
+color: white;
+}
+
+/* header end */
+/* hero setion start*/
+.container {
+    width: 100vw;
+    height: 100%;
+    background-color: cornflowerblue;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.content {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.content h1 {
+    width: 86%;
+    font-size: 2.9em;
+}
+
+.content p {
+    margin-top: 50px;
+    width: 86%;
+
+}
+
+.content h1 span {
+    background-color: rgba(255, 255, 0, 0.836);
+}
+
+.content input {
+    border: 2px solid blue;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 50px;
+    /* display: inline-flex; */
+}
+
+.content .input2 {
+    background-color: var(--blue-color);
+    color: white;
+    width: 10em;
+    padding: 10px;
+    border: 2px solid blue;
+    font-size: 1em;
+}
+
+.li {
+    display: flex;
+    /* padding: 10px; */
+}
+
+.li li {
+    padding: 20px 10px;
+    list-style-position: inside;
+}
+
+@media (max-width:800px) {
+
+    /* header */
+    header .header {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+        transition: all 0.3s ease;
+
+    }
+
+    header .icon {
+        display: block;
+
+    }
+
+    header:hover .header {
+        display: flex;
+    }
+
+    .header nav {
+        flex-direction: column;
+
+    }
+
+    .header nav a {
+        padding: 10px 0px 10px 3px;
+    }
+
+    .btns {
+
+        flex-direction: column;
+    }
+
+    .header nav select {
+        margin-top: 20px;
+    }
+
+    a {
+        padding: 5px 0px 20px 3px;
+
+    }
+
+    /* hero */
+    .container,
+    header {
+        width: auto;
+    }
+
+    .li {
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .li li {
+        padding: 0;
+    }
+
+    .content input {
+        display: block;
+    }
+
+    .content .input2 {
+        margin-top: 10px;
+    }
+
+    .content h1 {
+        width: 70%;
+        font-size: 2em;
+    }
+}
+
+@media(max-width:400px) {
+.header .logo {
+    display: flex;
+    flex-direction: column;
+    font: 1.2em;
+    align-items: flex-start;
+}
+.header .logo p{
+    margin-left: 0;
+}
+    .content input,
+    .content .input2 {
+        width: 70%;
+
+    }
+    .content h1 {
+        /* width: 40%; */
+        font-size: 1.5em;
+    }
+}
