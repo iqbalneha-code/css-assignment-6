@@ -17,7 +17,6 @@
 header {
     /* width: 100vw; */
     min-height: 70px;
-    background-color: var(--grey-color);
     /* position: fixed; */
     /* top: 0;
 right: 0;
@@ -36,7 +35,7 @@ header .icon {
 .header {
     max-width: 1600px;
     min-height: 70px;
-    background-color: var(--grey-color);
+    background-color: beige;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -118,8 +117,9 @@ button {
 /* hero setion start*/
 .container {
     /* width: 100vw; */
+    margin: auto;
     height: 100%;
-    background-color: cornflowerblue;
+    background-color: rgba(100, 148, 237, 0.219);
 }
 
 .box {
@@ -228,8 +228,18 @@ p:first-child {
 .img3, .img2{
     margin-top: 30px;
 }
-
-
+.img2{
+    position: relative;
+}
+.instagram{
+    width: 70px;
+    
+}
+.insta{
+    position: absolute;
+    top: 302px;
+    left: -20px;
+}
 
 
 
