@@ -35,7 +35,6 @@ header .icon {
 .header {
     max-width: 1600px;
     min-height: 70px;
-    background-color: beige;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -119,7 +118,6 @@ button {
     /* width: 100vw; */
     margin: auto;
     height: 100%;
-    background-color: rgba(100, 148, 237, 0.219);
 }
 
 .box {
@@ -145,8 +143,7 @@ button {
     width: 86%;
 
 }
-
-.content h1 span {
+h1 span {
     background-color: rgba(255, 255, 0, 0.836);
 }
 
@@ -158,7 +155,8 @@ button {
     /* display: inline-flex; */
 }
 
-.content .input2 {
+.input2 {
+    margin-top: 20px;
     background-color: var(--blue-color);
     color: white;
     width: 10em;
@@ -180,7 +178,7 @@ button {
 .story {
     height: 50px;
     width: 200px;
-    background-color: rgba(199, 197, 197, 0.993);
+    
     border-radius: 10px;
     position: relative;
     left: 0;
@@ -209,13 +207,15 @@ button {
     
 }
 
-p:first-child {
-    margin-left: 20%;
-    margin-top: 4px;
+p:first-child{
+ text-align: center;
 }
+p:last-child{
+     text-align: center;
 
+}
 .story .sidecontent .para {
-    margin-left: 20%;
+ /*   margin-left: 20%;*/
     margin-top: 4px;
 
     font-size: 12px;
@@ -240,10 +240,245 @@ p:first-child {
     top: 302px;
     left: -20px;
 }
+.footer1{
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    text-align: center;
+
+}
+.footer1 p{
+    color: grey ;
+    font-weight: 600;
+    text-shadow: 0px 2px 2px grey;
+
+    margin : 0;
+    
+}
+
+.footer1 span{
+    font-size: 0.7em;
+    padding : 15px;
+        color: grey ;
+    font-weight: 600;
+    text-shadow: 0px 2px 2px grey;
+
+}
 
 
 
+.widgets {
+    width: 90%;
+    max-width: 1100px;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
 
+
+
+.website-preview {
+    width: 70%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px #ccc;
+    padding: 10px;
+}
+
+.top-bar {
+    background: #222;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.preview-content {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.preview-content h2 {
+    margin: 15px 0;
+}
+
+.preview-content p {
+    font-size: 12px;
+    color: gray;
+}
+
+.preview-content button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.trending {
+    margin: 15px 0;
+}
+
+.recipe-cards {
+    display: flex;
+    gap: 10px;
+}
+
+.recipe {
+    flex: 1;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    border-radius: 8px;
+}
+
+.watermelon {
+    background: #b7d5c1;
+}
+
+.orange {
+    background: #ffb15c;
+}
+
+.avocado {
+    background: #c7d4a2;
+}
+
+.mango {
+    background: #f8dc9b;
+}
+
+.berry {
+    background: #e9b4c2;
+}
+
+
+.widget-info {
+    width: 30%;
+}
+
+.widget-info h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.widget-info ul {
+    list-style: none;
+}
+
+.widget-info li {
+    padding: 12px;
+    color: #999;
+    font-size: 14px;
+}
+
+.widget-info li:hover {
+    background: #eef1f8;
+    color: #1670e8;
+    border-radius: 5px;
+}
+
+.heading{
+    text-align: center;
+    text-transform: capitalize;
+}
+.cards{
+    margin-top: 20px;
+    width: 100%;
+    height : auto;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 200px;
+    width: 200px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px black;
+}
+.card p, .card b{
+    margin-top: 20px;
+    font-size : 1em;
+text-transform:  capitalize;
+}
+.card img{
+    width : 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+.card2{
+    width: 300px;
+    
+}
+.card3{
+        height: 400px;
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px #FFFFFF;
+
+}
+.section{
+    background: #000;
+    color: #ffffff;
+}
+p{
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+
+    .widgets {
+        flex-direction: column;
+        margin: 50px auto;
+        gap: 30px;
+    }
+
+    .website-preview {
+        width: 100%;
+    }
+
+    .widget-info {
+        width: 100%;
+    }
+
+    .widget-info h1 {
+        font-size: 25px;
+    }
+
+    .recipe {
+        height: 80px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .widgets {
+        width: 94%;
+    }
+
+    .recipe-cards {
+        gap: 5px;
+    }
+
+    .recipe {
+        height: 65px;
+        font-size: 20px;
+    }
+
+    .widget-info h1 {
+        font-size: 23px;
+    }
+    
+}
 
 
 
@@ -352,6 +587,16 @@ p:first-child {
 .main {
      flex-wrap: wrap;
 }
+.insta{
+    position: absolute;
+    top: 100px;
+    left: -20px;
+    width: 50px;
+}
+.footer1{
+padding: 50px;
+
+}
 }
 
 @media screen and (max-width: 400px) {
@@ -369,9 +614,15 @@ p:first-child {
     }
   img{
     width: 160px;
+    
    }
+p:first-child{
+ text-align: center;
+}
+p:last-child{
+     text-align: center;
 
-
+}
 }
 @media screen and (max-width: 200px){
      img{
